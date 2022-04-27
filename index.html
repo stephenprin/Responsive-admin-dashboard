@@ -10,27 +10,36 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 <body>
-    <div class="container">
+    
         <nav class="navbar">
-            <div class="logo-menu">
-                <div class="open" id="open-btn"><i class="uil uil-bars"></i></div>
-               <div class="logo">
-                <i class="uil uil-panorama-h"></i>
-                <h3>Prin Admin</h3>
-               </div>
-            </div>
-            <div class="nav-right">
-                <i class="uil uil-search"></i>
-                <i class="uil uil-qrcode-scan"></i>
-                <div class="alarm"><i class="uil uil-bell"></i></i></div>
-                <div class="profile-container">
-                    <div class="profile"><img src="./images/profile.jpg" alt=""></div>
-                   <h5>stephenprince427@gmail.com</h5>
+            <div class="container nav-container">
+                <div class="logo-menu">
+                    <div class="open" id="open-btn"><i class="uil uil-bars"></i></div>
+                    <div class="logo">
+                        <i class="uil uil-panorama-h"></i>
+                        <h3>Prin Admin</h3>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <i class="uil uil-search"></i>
+                    <i class="uil uil-qrcode-scan"></i>
+                    <div class="alarm"><i class="uil uil-bell"></i></i></div>
+                    <div class="toggle-theme">
+                        <i class="uil uil-sun "></i>
+                        <i class="uil uil-moon active"></i>
+                    </div>
+                    <div class="profile-container">
+                        <div class="profile"><img src="./images/profile.jpg" alt=""></div>
+                        <div class="profile-info">
+                            <h4>Hey, Prince</h4>
+                            <h5>stephenprince427@gmail.com</h5>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
 
-        <div class="dashboard">
+        <div class="dashboard container">
             <aside>
                 <div class="aside1 asideAll">
                     <p class="text-umuted">Navigation</p>
@@ -95,7 +104,7 @@
                         <i class="uil uil-plus"></i>
                         <h4>Add product</h4>
                     </a>
-                    <a href="#">
+                    <a href="#" class="logout">
                         <i class="uil uil-sign-out-alt"></i>
                         <h4>Logout</h4>
                     </a>
@@ -125,7 +134,7 @@
                             </div>
 
                         </div>
-                        <p class="text-muted">Last 24 Hours</p>
+                        <small class="text-muted">Last 24 Hours</small>
                     </div>
                     <!----END OF SALES-->
                     <div class="income">
@@ -145,7 +154,7 @@
                             </div>
 
                         </div>
-                        <p class="text-muted">Last 24 Hours</p>
+                        <small class="text-muted">Last 24 Hours</small>
                     </div>
                     <!--END OF INCOME-->
                     <div class="expenses">
@@ -165,13 +174,125 @@
                             </div>
 
                         </div>
-                        <p class="text-muted">Last 24 Hours</p>
+                        <small class="text-muted">Last 24 Hours</small>
                     </div>
                     <!--end of expenes-->
                 </div>
+                 <!--===END OF INSIGHT INFORMATION ============-->
+                 <div class="recent-order">
+                     <h2>Recent Orders</h2>
+                     <table>
+                         <thead>
+                             <tr>
+                                 <th>Product Name</th>
+                                 <th>Product Number</th>
+                                 <th>Payment</th>
+                                 <th>Status</th>
+                                 <th></th>
+                             </tr>
+                         </thead>
+                         <tbody>
+                            
+                         </tbody>
+                     </table>
+                     <a href="#">SEE ALL</a>
+                 </div>
             </main>
-            sffffffffff
+            <!---END OF Main dection-->
+
+            <div class="right">
+               
+
+                <div class="recent-update">
+                    <h2>Recent Updates</h2>
+                    <div class="updates">
+                        <div class="update">
+                            <div class="profile">
+                                <img src="./images/team4.jpg">
+                            </div>
+                            <div class="info">
+                                <p><b>Caro James</b> newly upgrade System board was tested and deliver</p>
+                                <small class="text-muted">40minutes ago</small>
+                            </div>
+                        </div>
+                        <div class="update">
+                            <div class="profile">
+                                <img src="./images/team5.jpg">
+                            </div>
+                            <div class="info">
+                                <p><b>Sara Michael</b> recieve her Iphone 13 with face ID</p>
+                                <small class="text-muted">4hours ago</small>
+                            </div>
+                        </div>
+                        <div class="update">
+                            <div class="profile">
+                                <img src="./images/team4.jpg">
+                            </div>
+                            <div class="info">
+                                <p><b>Arthur John</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                                <small class="text-muted">4hours ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!--------end of UPADATES-->
+                   <div class="sales-analytic">
+                    <h2 class="">Sales Analytic</h2>
+                    <div class=" item online">
+                        <div class="icon-left">
+                            <i class="uil uil-shopping-cart-alt"></i>
+                        </div>
+                        <div class="right">
+                            <div class="info">
+                                <h3>ONLINE ORDERS</h3>
+                                <small class="text-muted">Now</small>
+                            </div>
+                            <h5 class="sucess">+23</h5>
+                            <h3>2359</h3>
+                        </div>
+                    </div>
+                    <div class=" item offline">
+                        <div class="icon-left">
+                            <i class="uil uil-store-alt"></i>
+                        </div>
+                        <div class="right">
+                            <div class="info">
+                                <h3>OFFLINE ORDERS</h3>
+                                <small class="text-muted">Last 30minutes ago</small>
+                            </div>
+                            <h5 class="danger">-15</h5>
+                            <h3>1590</h3>
+                        </div>
+                    </div>
+                    <div class=" item new-customer">
+                        <div class="icon-left">
+                            <i class="uil uil-user-arrows"></i>
+                        </div>
+                        <div class="right">
+                            <div class="info">
+                                <h3>NEW CUSTOMER</h3>
+                                <small class="text-muted">Last 1hour ago</small>
+                            </div>
+                            <h5 class="sucess">+34</h5>
+                            <h3>359</h3>
+                        </div>
+                    </div>
+                    <div class=" item add-customer">
+                        <div class="icon-left">
+                            <i class="uil uil-plus"></i>
+                        </div>
+                        <div class="right">
+                            <div class="info">
+                                <h3>ADD CUSTOMER</h3>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                   </div>
+                </div>
+            </div>
         </div>
-    </div>
+    <script src="order.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
